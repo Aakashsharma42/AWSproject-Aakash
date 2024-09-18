@@ -273,12 +273,43 @@ Conclusion
 
 •	The project intends to give insights on university survey success rate. The outlined pipeline illustrates a thorough methodology to accomplish this goal.
 
+# Project 3
+
+# Objectives
+
+To develop and deploy an effective and high-performing Data Analytics Platform (DAP) for the City of Vancouver using AWS cloud services. The purpose of this platform is to streamline the transfer, storage, manipulation, and examination of urban datasets in order to improve decision-making based on data, while also guaranteeing the safeguarding of data, appropriate governance, and adherence to privacy regulations.
 
 
+# Table of Contents
+
+Data Discovery
+
+ETL Workflow
+
+Data protection
+
+Data Governance
+
+Data Monitoring
+
+AWS Services Used
+
+DAP Architectural Analysis
+
+Insights and Findings
+
+Conclusion
+
+# Data Discovery
+For the discovery of data as per my Project 1 procedure 'Awarded Contracts' has been selected from Government and Finance department for the city of Vancouver. 
+
+# ETL Workflow 
+AWS Glue service is being used for implimenting ETL process. 
+
+![image](https://github.com/user-attachments/assets/80143e90-94e1-40d5-9ec4-f9426f565ea2)
 
 
-
-
+# Data Protection 
 
 
 
