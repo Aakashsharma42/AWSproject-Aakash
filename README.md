@@ -273,7 +273,7 @@ Conclusion
 
 •	The project intends to give insights on university survey success rate. The outlined pipeline illustrates a thorough methodology to accomplish this goal.
 
-# Project 3
+# Project 2
 
 # Objectives
 
@@ -311,38 +311,189 @@ AWS Glue service is being used for implimenting ETL process.
 
 # Data Protection 
 
+Access Control: To control access to AWS resources, users, user groups, and roles are created using IAM. The project designates roles, such "LabRole," to make sure that the right people are the only ones with the required access.
+
+The creation of policies guarantees that each individual or group can access only the resources they require by granting them the minimal amount of permissions.
+
+(I)
 
 
 
 
+# Data Storage in S3 
+
+Access Controls: To ensure that only authorized users and services can access the data, access to the S3 buckets is managed using an arrangement of bucket policies and IAM roles. To protect data during transformation, the ETL pipeline processes data using AWS Glue and encryption techniques.
+
+![image](https://github.com/user-attachments/assets/5ff760d7-35c6-49ac-8b5f-ee45e52b9eeb)
 
 
 
+# Data Goverence 
+
+. Data Quality Management : AWS Glue: ETL Pipeline: Before data is saved in the "Trusted" zone, it must first be cleaned, processed, and organized using the ETL (Extract, Transform, Load) pipeline. This guarantees completeness, high quality, and analysis readiness of the data used for analytics.
+
+Conditional Routing: This ensures that the dataset used for analytics is correct and dependable by moving records into the trusted zone only after they pass data quality tests.
+
+
+S3 versioning is turned on to keep track of all data modifications. This enables the retrieval of past versions in the event of accidental deletions or changes, aiding data governance through data lineage and audit trails.
+
+LabRole Implementation involves assigning a predetermined role, called 'LabRole', to oversee permissions related to encryption keys, data access, and usage within the platform, thereby maintaining uniform governance policies throughout the platform.
+
+
+![image](https://github.com/user-attachments/assets/dd8edabf-aa77-4ca6-8a90-43b914d463d9)
+
+
+# Data Monitoring 
+
+.Monitoring resources is done by using AWS CloudWatch to track important metrics on AWS resources, such as CPU usage, memory consumption, and network traffic. It offers immediate visibility into the data analytics platform's performance.
+
+.CloudWatch enables the customization of metrics and dashboards for specific components of the data analytics platform. Monitoring the condition of S3 buckets, ETL pipelines in AWS Glue, and data processing jobs is useful for keeping an eye on data flow and identifying abnormalities.
+
+.CloudWatch Alarms are established to send notifications when specific thresholds are exceeded, such as high data access attempts or spikes in resource usage. This active surveillance assists in detecting and addressing possible security incidents or performance problems.
+
+![image](https://github.com/user-attachments/assets/fb47c300-bd0f-4ec2-8e36-a715a0f4c67c)
+
+
+# Findings
+
+The project has effectively created a secure data analytics platform for the City of Vancouver by utilizing AWS services. Data security is maintained by encryption (utilizing AWS KMS) and access control (through IAM), protecting the confidentiality and integrity of data.
+
+Data Governance: The system upholds data governance by utilizing AWS Glue for ETL tasks and data quality assessments, guaranteeing that only top-notch, pristine data is utilized for analysis. IAM policies and the structuring of S3 buckets also enhance privacy and compliance.
+
+Data Monitoring: Immediate monitoring through AWS CloudWatch and CloudTrail follows resource utilization, API actions, and data retrieval. The ongoing monitoring aids in upholding operational transparency and quickly identifying anomalies or security issues.
+
+
+Improved Data Security and Privacy: Data privacy and compliance are ensured through encryption techniques and role-based access control, crucial for managing sensitive city data. Versioning in S3 ensures the accuracy of data by enabling the retrieval of past data versions.
+
+
+# Conclusion
+
+
+The AWS Data Analytics Platform for the City of Vancouver creates a secure and efficient way to manage and analyze city data. It uses various AWS services like IAM, KMS, S3, Glue, CloudWatch, and CloudTrail to protect data and ensure good governance. This platform not only keeps sensitive information safe through encryption and access controls but also improves data quality with careful processes. It can easily scale to handle different data sizes and needs, making it cost-effective. Overall, it supports data-driven decision-making while meeting privacy standards, with potential for future upgrades in analytics and governance.
+
+
+# Project 3 
+
+The process for the consideration of surveys is administered by the Survey Management Committee, a group of faculty and staff with knowledge and experience in survey methodology and design and related topics
+
+
+# Table of Contents
+
+•	Methodology
+
+•	Data Discovery
+
+•	Data Pipeline Design
+
+•	Data Analysis
+
+•	Data Visualisation
+
+•	Data Publishing
+
+Data Analytical Question Formulation (Methodology)
+
+This policy and associated procedure outline the coordinated approach to the administration of surveys with the goal of maximizing their usefulness
+
+
+Dataset Discovery
+
+The sample dataset includes three Excel files for the years 2022, 2023 & 2024
+
+•	Sample Survey Records Information.  
+
+•	Sample Survey Records. 
+
+•	Sample completed survey
+
+
+Data Pipeline Design
+•	For Data processing  Draw.io is being used.
+
+
+AWS Services
+•	For Data Storage Amazon S3.
+•	For Data Cleaning and Structuring AWS GlueData Brew.
+•	For Data Pipeline structure AWS Glue.
+
+Data Cleaning and Structuring includes some different types of operations for different easy working such as: 
+
+•	Checking invalid values in data sets such as null rows.
+
+•	Renaming of column names.
+
+•	Change of Data Type for columns.
+
+•	Change of Schema (Addition of Column as required).
+
+•	Creation and publishing of recipes.
+
+
+![image](https://github.com/user-attachments/assets/57ecf86c-4413-4a29-9e19-527eac3901f6)
+
+
+Data Pipeline Implementation:
+
+•	Implemented using AWS Glue for ETL processes.
+
+•	Transformation operations included schema changes, aggregation, and union operations.
+
+
+![image](https://github.com/user-attachments/assets/98452711-5038-4db5-a799-23133c2a4d9f)
+
+Outcome
+
+They ETL  diagram illustrating the calculation of metrics derived by ETL Glue.
+
+
+Insights and Findings
+
+•	Survey Success rate for the year 2024:
+
+o	The survey rate for the year 2023 is 70 %.
+
+o	This indicates that for every 10 surveys generated in the year 2024, 7 were successful.
+
+o	This rate reflects an increase when compared to the previous years (2022 & 2023).
+
+•	Survey Success rate for the year 2023:
+
+o	The graduation rate for the year 2023 is 50%.
+
+o	This indicates that for every 10 surveys generated in the year 2023, 5 were successful.  
+
+o	However, this rate reflects a decrease of 5% when compared to the previous years (2022).
+
+•	Survey Success rate for the year 2022:
+
+o	The graduation rate for the year 2022 is 55%.
+
+o	This indicates that for every 10 surveys generated in the year 2022, 5.5 were successful.  
 
 
 
+•	Trend Analysis:
+
+o	There is a notable fluctuation in the graduation rates over the three years:
+
+o	2022: 55%
+
+o	2023: 50% (5% increase from 2022)
+
+o	2024: 70% (20%  increase from 2023)
+
+•	The observed pattern underscores possible areas of worry in the survey success rate that UCW should consider resolving.
 
 
+Conclusion
+
+•	The project efficiently utilizes AWS Glue DataBrew for data cleansing and transformation, and the ETL pipeline is successfully implemented to compute the graduation rate of students.
 
 
+•	The whole process, from data preparation to the creation of final output, is meticulously structured with explicit procedures for extracting, converting, and loading data into an S3 bucket. By using a systematic data processing technique. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+•	The project intends to give insights on university survey success rate. The outlined pipeline illustrates a thorough methodology to accomplish this goal.
 
 
 
