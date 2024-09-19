@@ -150,132 +150,7 @@ This study demonstrates the efficacy of using AWS cloud services for extensive d
 
 
 
-# Project 2 
-
-The process for the consideration of surveys is administered by the Survey Management Committee, a group of faculty and staff with knowledge and experience in survey methodology and design and related topics
-
-
-# Table of Contents
-
-•	Methodology
-
-•	Data Discovery
-
-•	Data Pipeline Design
-
-•	Data Analysis
-
-•	Data Visualisation
-
-•	Data Publishing
-
-Data Analytical Question Formulation (Methodology)
-
-This policy and associated procedure outline the coordinated approach to the administration of surveys with the goal of maximizing their usefulness
-
-
-Dataset Discovery
-
-The sample dataset includes three Excel files for the years 2022, 2023 & 2024
-
-•	Sample Survey Records Information.  
-
-•	Sample Survey Records. 
-
-•	Sample completed survey
-
-
-Data Pipeline Design
-•	For Data processing  Draw.io is being used.
-
-
-AWS Services
-•	For Data Storage Amazon S3.
-•	For Data Cleaning and Structuring AWS GlueData Brew.
-•	For Data Pipeline structure AWS Glue.
-
-Data Cleaning and Structuring includes some different types of operations for different easy working such as: 
-
-•	Checking invalid values in data sets such as null rows.
-
-•	Renaming of column names.
-
-•	Change of Data Type for columns.
-
-•	Change of Schema (Addition of Column as required).
-
-•	Creation and publishing of recipes.
-
-
-![image](https://github.com/user-attachments/assets/57ecf86c-4413-4a29-9e19-527eac3901f6)
-
-
-Data Pipeline Implementation:
-
-•	Implemented using AWS Glue for ETL processes.
-
-•	Transformation operations included schema changes, aggregation, and union operations.
-
-
-![image](https://github.com/user-attachments/assets/98452711-5038-4db5-a799-23133c2a4d9f)
-
-Outcome
-
-They ETL  diagram illustrating the calculation of metrics derived by ETL Glue.
-
-
-Insights and Findings
-
-•	Survey Success rate for the year 2024:
-
-o	The survey rate for the year 2023 is 70 %.
-
-o	This indicates that for every 10 surveys generated in the year 2024, 7 were successful.
-
-o	This rate reflects an increase when compared to the previous years (2022 & 2023).
-
-•	Survey Success rate for the year 2023:
-
-o	The graduation rate for the year 2023 is 50%.
-
-o	This indicates that for every 10 surveys generated in the year 2023, 5 were successful.  
-
-o	However, this rate reflects a decrease of 5% when compared to the previous years (2022).
-
-•	Survey Success rate for the year 2022:
-
-o	The graduation rate for the year 2022 is 55%.
-
-o	This indicates that for every 10 surveys generated in the year 2022, 5.5 were successful.  
-
-
-
-•	Trend Analysis:
-
-o	There is a notable fluctuation in the graduation rates over the three years:
-
-o	2022: 55%
-
-o	2023: 50% (5% increase from 2022)
-
-o	2024: 70% (20%  increase from 2023)
-
-•	The observed pattern underscores possible areas of worry in the survey success rate that UCW should consider resolving.
-
-
-Conclusion
-
-•	The project efficiently utilizes AWS Glue DataBrew for data cleansing and transformation, and the ETL pipeline is successfully implemented to compute the graduation rate of students.
-
-
-•	The whole process, from data preparation to the creation of final output, is meticulously structured with explicit procedures for extracting, converting, and loading data into an S3 bucket. By using a systematic data processing technique. 
-
-
-•	The project intends to give insights on university survey success rate. The outlined pipeline illustrates a thorough methodology to accomplish this goal.
-
-# Project 2
-
-# Objectives
+# Project 2 Objectives
 
 To develop and deploy an effective and high-performing Data Analytics Platform (DAP) for the City of Vancouver using AWS cloud services. The purpose of this platform is to streamline the transfer, storage, manipulation, and examination of urban datasets in order to improve decision-making based on data, while also guaranteeing the safeguarding of data, appropriate governance, and adherence to privacy regulations.
 
@@ -372,7 +247,7 @@ Improved Data Security and Privacy: Data privacy and compliance are ensured thro
 The AWS Data Analytics Platform for the City of Vancouver creates a secure and efficient way to manage and analyze city data. It uses various AWS services like IAM, KMS, S3, Glue, CloudWatch, and CloudTrail to protect data and ensure good governance. This platform not only keeps sensitive information safe through encryption and access controls but also improves data quality with careful processes. It can easily scale to handle different data sizes and needs, making it cost-effective. Overall, it supports data-driven decision-making while meeting privacy standards, with potential for future upgrades in analytics and governance.
 
 
-# Project 3 
+# Project 3 Objectives 
 
 The process for the consideration of surveys is administered by the Survey Management Committee, a group of faculty and staff with knowledge and experience in survey methodology and design and related topics
 
@@ -391,12 +266,12 @@ The process for the consideration of surveys is administered by the Survey Manag
 
 •	Data Publishing
 
-Data Analytical Question Formulation (Methodology)
+# Methodology
 
 This policy and associated procedure outline the coordinated approach to the administration of surveys with the goal of maximizing their usefulness
 
 
-Dataset Discovery
+# Dataset Discovery
 
 The sample dataset includes three Excel files for the years 2022, 2023 & 2024
 
@@ -407,11 +282,11 @@ The sample dataset includes three Excel files for the years 2022, 2023 & 2024
 •	Sample completed survey
 
 
-Data Pipeline Design
+# Data Pipeline Design
 •	For Data processing  Draw.io is being used.
 
 
-AWS Services
+# AWS Services
 •	For Data Storage Amazon S3.
 •	For Data Cleaning and Structuring AWS GlueData Brew.
 •	For Data Pipeline structure AWS Glue.
@@ -432,7 +307,7 @@ Data Cleaning and Structuring includes some different types of operations for di
 ![image](https://github.com/user-attachments/assets/57ecf86c-4413-4a29-9e19-527eac3901f6)
 
 
-Data Pipeline Implementation:
+# Data Pipeline Implementation:
 
 •	Implemented using AWS Glue for ETL processes.
 
@@ -441,12 +316,12 @@ Data Pipeline Implementation:
 
 ![image](https://github.com/user-attachments/assets/98452711-5038-4db5-a799-23133c2a4d9f)
 
-Outcome
+# Outcome
 
 They ETL  diagram illustrating the calculation of metrics derived by ETL Glue.
 
 
-Insights and Findings
+# Insights and Findings
 
 •	Survey Success rate for the year 2024:
 
@@ -485,7 +360,7 @@ o	2024: 70% (20%  increase from 2023)
 •	The observed pattern underscores possible areas of worry in the survey success rate that UCW should consider resolving.
 
 
-Conclusion
+# Conclusion
 
 •	The project efficiently utilizes AWS Glue DataBrew for data cleansing and transformation, and the ETL pipeline is successfully implemented to compute the graduation rate of students.
 
